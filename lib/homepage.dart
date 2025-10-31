@@ -10,14 +10,78 @@ class MyHomePage extends StatelessWidget {
       body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
+            floating: true,
             title: Text("S L I V E R  A P P  B A R"),
             leading: Icon(Icons.menu),
             backgroundColor: Colors.redAccent,
             expandedHeight: 400,
+            flexibleSpace: FlexibleSpaceBar(
+              title: Center(child: Text("H E L L O ~ A L F ^")),
+              background: Container(
+                color: Colors.pink[200],
+              ), //alternative -Image.asset(name),
+            ),
           ),
           SliverToBoxAdapter(
-          
-            child: Container(height: 200, color: Colors.blue)),
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 200,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+              ),
+            ),
+          ),
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 200,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+              ),
+            ),
+          ),
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 200,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+              ),
+            ),
+          ),
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 200,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+              ),
+            ),
+          ),
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                height: 200,
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
